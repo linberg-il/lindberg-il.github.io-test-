@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>i'm Lingberg</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- blog css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/post-pre.css">
+
+  </head>
+  <body>
+    <header class="intro-header" style="background-image: url(pic/blog_pic_cr.jpg); height: 314px;">
+      <div class="container" style="height: 314px;">
+        <span class="menu-btn" onclick="openNav()"><h1>☰</h1></span>
+        <div class="blog-header">
+          <h1 class="blog-title"><span class="border">I'M LINDBERG</span></h1>
+        </div>
+      </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" class="active">главная</a>
+      <a href="about.html">соц</a>
+      <a href="posts/post-25-10-16.html">Первая запись</a>
+    </div>
+    <div class="container" style="background-image: url(pic/sayagata.png); height: 20px; width: 100%; position: relative; opacity: 0.75; background-attachment: fixed;"></div>
+    <div class="blog-post">
+      <div class="wrap">
+        <div class="title">
+            <h2>Тестирование Soundcloud</h2>
+        </div>
+        <div class="date">
+          <span>26 oct 2016</span>
+        </div>
+        <div class="sound">
+          <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/198750780&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        </div>
+        <div id="button">
+          <a href="posts/post-26-10-16.html"><p><button class="button"><span>Больше</span></button></p></a>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="background-image: url(pic/sayagata.png); height: 20px; width: 100%; position: relative; opacity: 0.75; background-attachment: fixed;"></div>
+    <div class="blog-post">
+      <div class="wrap">
+        <div class="title">
+            <h2>Первая запись в блоге!</h2>
+        </div>
+        <div class="date">
+          <span>25 oct 2016</span>
+        </div>
+        <div class="img">
+          <img src="http://storage8.static.itmages.ru/i/16/1026/h_1477482297_9583690_68ddd6dba9.png" alt="uray" style="float: left; max-width: 100%; height: auto;"/>
+        </div>
+        <div class="text">
+          <p>
+            С этого момента я, возможно, буду вести блог, в котором я буду писать различные истории и делиться различным контентом.
+          </p>
+        </div>
+        <div id="button">
+          <a href="posts/post-25-10-16.html"><p><button class="button"><span>Больше</span></button></p></a>
+        </div>
+      </div>
+    </div>
+    <footer class="end-footer" style="background-image: url(pic/sayagata.png);">
+      <p class="text-muted">
+        Ilya Lindberg | lindberg.ichiro@outlook.com
+      </p>
+    </footer>
+    <script type="text/javascript">
+    /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.wrap {
+  padding-top: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+  width: 80%;
+}
+
+.title h2 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.text p {
+  text-align: left;
+  font-size: 18px;
+}
+.date {
+  font-size: 14px;
+  color: grey;
+  padding-bottom: 20px;
+}
+.img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

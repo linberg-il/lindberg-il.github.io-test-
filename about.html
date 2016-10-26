@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>i'm Lindberg</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- main page css -->
+    <link rel="stylesheet" href="css/about.css">
+  </head>
+  <body>
+    <header class="intro-header" style="background-image: url(pic/blog_pic_cr.jpg);">
+      <div class="container" style="height: 314px;">
+        <span class="menu-btn" onclick="openNav()"><h1>☰</h1></span>
+        <div class="blog-header">
+          <h1 class="blog-title"><span class="border">I'M LINDBERG</span></h1>
+        </div>
+      </div>
+    </header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" class="active">главная</a>
+      <a href="about.html">соц</a>
+      <a href="posts/post-25-10-16.html">Первая запись</a>
+    </div>
+
+    <div class="container" style="background-image: url(pic/sayagata.png);">
+    <div class="social">
+        <div class="col-lg-4">
+        <img class="img-circle" alt="VK" src="pic/1.jpg" style="width: 180px; height: 180px;">
+          <h2>VK</h2>
+          <p>VK is a social network where i can listen music & scroll memes.</p>
+          <p><button class="button"><span><a href="https://vk.com/ichlindberg">Write</a></span></button></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" alt="140x140" src="pic/2.jpg" style="width: 180px; height: 180px;">
+          <h2>instagram</h2>
+          <p>Follow me to see my photos and videos.</p>
+          <p><button class="button"><span><a href="https://www.instagram.com/ichiro_lindberg/">Follow</a></span></button></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" alt="140x140" src="pic/3.png" style="width: 180px; height: 180px;">
+          <h2>twitter</h2>
+          <p>Follow me to see what nothing happend in my mind!</p>
+          <p><button class="button"><span><a href="https://twitter.com/baka_il">Follow</a></span></button></p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    /* Set the width of the side navigation to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "200px";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+  </body>
+</html>

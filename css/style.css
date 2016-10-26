@@ -1,0 +1,202 @@
+@import "bootstrap.css" all;
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.video {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%;
+}
+.video iframe, .video object, .video embed{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+.container {
+  height: 314px;
+  width: 100%;
+}
+
+.intro-header {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
+.blog-header h1 {
+  padding-top: 60px;
+  color: white;
+  font-weight: normal;
+}
+.blog-header a {
+  text-decoration: none;
+  color: #fff;
+}
+.blog-header a:hover {
+  color: #f2efe8;
+}
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  cursor: default;
+}
+
+/* Header */
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 55px;
+}
+.blog-description {
+  font-size: 20px;
+  color: #789fbb;
+}
+
+.btn-link {
+  padding: 6px 6px !important;
+}
+
+.button {
+  background-color: #111;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 314px;
+    width: 0;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.2s;
+    opacity: 0.95;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    opacity: 0.75;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1;
+  opacity: 0.85;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.menu-btn {
+  cursor: pointer;
+  position:absolute;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.75;
+}
+.img {
+  margin-top: 10px;
+  margin-bottom: 55%;
+  /*width: 400px;
+  height: 320px;*/
+
+}
+.video {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sound {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.end-footer {
+  width: 100%;
+  position: absolute;
+  opacity: 0.75;
+  background-attachment: fixed;
+}
+.end-footer p {
+  margin: 20px 20px;
+}
