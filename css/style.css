@@ -7,6 +7,7 @@ h5, .h5,
 h6, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
+  margin-top: 10px !important;
 }
 body {
   -webkit-user-select: none;
@@ -127,10 +128,10 @@ body {
 
 /* The side navigation menu */
 .sidenav {
-    height: 314px;
+    height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1; /* Stay on top */
+    z-index: 5;
     top: 0;
     left: 0;
     background-color: #111;
@@ -171,10 +172,8 @@ body {
 }
 .menu-btn {
   cursor: pointer;
-  position:absolute;
+  position: absolute;
   text-decoration: none;
-  color: #fff;
-  opacity: 0.75;
 }
 .img {
   margin-top: 10px;
@@ -200,3 +199,16 @@ body {
 .end-footer p {
   margin: 20px 20px;
 }
+#secondary_bar {
+    height: 48px;
+    width: 100%;
+    background: #4c4c4c;
+    opacity: 0.974;
+    display: none;
+  }
+#secondary_bar.bar_fixed {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    display: block;
+  }

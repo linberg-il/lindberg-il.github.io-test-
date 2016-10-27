@@ -8,23 +8,34 @@
     <!-- blog css -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/post-pre.css">
-
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+      jQuery(function (f) {
+        f(window).scroll(function () {
+          f('#secondary_bar')[(f(this).scrollTop() > 314 ? "add" : "remove") + "Class"]("bar_fixed");
+        });
+      });
+    </script>
   </head>
   <body>
+    <div id="secondary_bar" class="nav navbar-fixed">
+      <span class="menu-btn" onclick="openNav()" style="color: #fff;"><h1 style="font-size: 26px; padding-left: 10px;">☰</h1></span>
+      <div class="navbar-brand" style="letter-spacing: 10px; color: #fff; font-size: 26px; align: center; margin-left: 38%; cursor: default;">I'M LINDBERG</div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html" class="active">главная</a>
+      <a href="about.html">соц. сети</a>
+      <a href="posts/post-25-10-16.html">первая запись</a>
+    </div>
     <header class="intro-header" style="background-image: url(pic/blog_pic_cr.jpg); height: 314px;">
       <div class="container" style="height: 314px;">
-        <span class="menu-btn" onclick="openNav()"><h1>☰</h1></span>
+        <span class="menu-btn" onclick="openNav()" style="color: #CECECE;"><h1>☰</h1></span>
         <div class="blog-header">
           <h1 class="blog-title"><span class="border">I'M LINDBERG</span></h1>
         </div>
       </div>
     </header>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html" class="active">главная</a>
-      <a href="about.html">соц</a>
-      <a href="posts/post-25-10-16.html">Первая запись</a>
-    </div>
     <div class="container" style="background-image: url(pic/sayagata.png); height: 20px; width: 100%; position: relative; opacity: 0.75; background-attachment: fixed;"></div>
     <div class="blog-post">
       <div class="wrap">
@@ -72,7 +83,7 @@
     <script type="text/javascript">
     /* Set the width of the side navigation to 250px */
         function openNav() {
-          document.getElementById("mySidenav").style.width = "200px";
+          document.getElementById("mySidenav").style.width = "250px";
         }
 
         /* Set the width of the side navigation to 0 */
