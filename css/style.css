@@ -41,7 +41,7 @@ body {
 .intro-header {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  opacity: 0.75;
+  opacity: 0.80;
 }
 .blog-header h1 {
   padding-top: 60px;
@@ -172,8 +172,9 @@ body {
 }
 .menu-btn {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   text-decoration: none;
+  z-index: 5;
 }
 .img {
   margin-top: 10px;
@@ -199,16 +200,3 @@ body {
 .end-footer p {
   margin: 20px 20px;
 }
-#secondary_bar {
-    height: 48px;
-    width: 100%;
-    background: #4c4c4c;
-    opacity: 0.974;
-    display: none;
-  }
-#secondary_bar.bar_fixed {
-    position: fixed;
-    top: 0;
-    z-index: 3;
-    display: block;
-  }
